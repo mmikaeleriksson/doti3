@@ -1,0 +1,16 @@
+#readme https://github.com/greshake/i3status-rust/blob/master/blocks.md
+
+theme = "mikael"
+icons = "awesome"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%R"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "music"
+player = "spotify"

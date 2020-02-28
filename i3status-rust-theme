@@ -1,0 +1,17 @@
+pub static ref MIKAEL: Theme = Theme {
+    idle_bg: "#2e1b38".to_owned(),
+    idle_fg: "#fbd0c3".to_owned(),
+    info_bg: "#d15196".to_owned(),
+    info_fg: "#1b4566".to_owned(),
+    good_bg: "#afff00".to_owned(),
+    good_fg: "#000000".to_owned(),
+    warning_bg: "#ffaf00".to_owned(),
+    warning_fg: "#000000".to_owned(),
+    critical_bg: "#d70000".to_owned(),
+    critical_fg: "#000000".to_owned(),
+    separator: "\u{e0b2}".to_owned(),
+    separator_bg: "auto".to_owned(),
+    separator_fg: "auto".to_owned(),
+    alternating_tint_bg: "#000000".to_owned(),
+    alternating_tint_fg: "#000000".to_owned(),
+};
