@@ -9,8 +9,24 @@ interval = 60
 format = "%R"
 
 [[block]]
+block = "music"
+player = "spotify"
+
+[[block]]
 block = "sound"
 
 [[block]]
-block = "music"
-player = "spotify"
+block = "memory"
+format_mem = "{Mug}GB"
+format_swap = "{SUg}GB"
+
+[[block]]
+block = "cpu"
+interval = 1
+
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 10
+format = "{average}° avg"
+chip = "*-isa-*"
