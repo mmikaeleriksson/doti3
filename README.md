@@ -7,4 +7,4 @@
   * Compile (cargo build --release)
 
 Screenshot
-<img src="https://i.imgur.com/jEJ0DQO.png">
+<img src="https://i.imgur.com/9ZV5UOy.png">
