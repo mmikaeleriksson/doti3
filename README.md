@@ -5,3 +5,6 @@
 * Download [**i3status-rust**](https://github.com/greshake/i3status-rust)
   * Copy contents from i3status-rust-theme into i3status-rust/src/themes.rs
   * Compile (cargo build --release)
+
+Screenshot
+<img src="https://i.imgur.com/PxtQNpk.png">
