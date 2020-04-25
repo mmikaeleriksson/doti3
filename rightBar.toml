@@ -6,7 +6,8 @@ icons = "awesome"
 [[block]]
 block = "time"
 interval = 60
-format = "%a %d/%m %R"
+format = "%R %a %d/%m"
+on_click = "gnome-calendar"
 
 [[block]]
 block = "music"

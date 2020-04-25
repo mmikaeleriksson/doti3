@@ -184,7 +184,7 @@ bar {
         background #2e1b38
         statusline #dddddd
         focused_workspace #d15196 #d15196 #ffffff
-        active_workspace #1b4566 #1b4566 #ffffff
+        active_workspace #533d5f #533d5f #ffffff
         inactive_workspace #2e1b38 #2e1b38 #888888
         urgent_workspace #2f343a #900000 #ffffff
     }
@@ -201,7 +201,7 @@ bar {
         background #2e1b38
         statusline #dddddd
         focused_workspace #d15196 #d15196 #ffffff
-        active_workspace #1b4566 #1b4566 #ffffff
+        active_workspace #533d5f #533d5f #ffffff
         inactive_workspace #2e1b38 #2e1b38 #888888
         urgent_workspace #2f343a #900000 #ffffff
     }
@@ -210,8 +210,15 @@ bar {
 
 ##Custom config
 
+#focused window color
+client.focused #d778ab #d778ab #ffffff #2e9ef4     #d778ab
+
 # lock screen
 bindsym $mod+Shift+x exec i3lock --color 1b1e38
+
+# keyboard language change
+exec "setxkbmap -layout us,se"
+exec "setxkbmap -option 'grp:win_space_toggle'"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec "amixer -q -D pulse set Master 1%+ unmute"
@@ -227,11 +234,11 @@ bindsym XF86AudioPrev exec playerctl previous
 exec_always feh --bg-fill ~/Pictures/Wallpapers/Lakeside-4.png
 
 # assign applications to workspaces
+# find class with xprop
 assign [class="Pulseeffects"] $ws8
-
-# autostart applications
-exec pulseeffects
-exec dropbox start
+for_window [class="Spotify"] move to workspace $ws8
+assign [class="discord"] $ws9
+assign [class="Steam"] $ws2
 
 # move workspaces to different monitors
 workspace $ws1 output DP-2
@@ -243,6 +250,7 @@ workspace $ws8 output DVI-D-0
 workspace $ws9 output DVI-D-0
 workspace $ws10 output DVI-D-0
 
-# keyboard language change
-exec "setxkbmap -layout us,se"
-exec "setxkbmap -option 'grp:win_space_toggle'"
+# autostart applications -- LAST
+exec pulseeffects
+exec dropbox start
+exec gnome-settings-daemon
