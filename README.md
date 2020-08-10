@@ -5,6 +5,8 @@
 * Download [**i3status-rust**](https://github.com/greshake/i3status-rust)
   * Copy contents from i3status-rust-theme into i3status-rust/src/themes.rs
   * Compile (cargo build --release)
+* Wallpaper
+  * Lakeside-4 by https://dribbble.com/louiscoyle
 
 Screenshot
 <img src="https://i.imgur.com/9ZV5UOy.png">
