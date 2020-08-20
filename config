@@ -97,7 +97,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 "
 set $ws2 "2 "
-set $ws3 "3"
+set $ws3 "3 "
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -217,7 +217,7 @@ client.focused #d778ab #d778ab #ffffff #2e9ef4     #d778ab
 bindsym $mod+Shift+x exec i3lock --color 1b1e38
 
 # keyboard language change
-exec "setxkbmap -layout us,se"
+exec "setxkbmap -layout us,se,ru"
 exec "setxkbmap -option 'grp:win_space_toggle'"
 
 # Pulse Audio controls
@@ -231,7 +231,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # wallpaper
-exec_always feh --bg-fill ~/Pictures/Wallpapers/Lakeside-4.png
+exec_always feh --bg-fill ~/Pictures/Wallpapers/Lakeside_2019_UHD2.png
 
 # assign applications to workspaces
 # find class with xprop
@@ -246,6 +246,7 @@ workspace $ws2 output DP-2
 workspace $ws3 output DP-2
 workspace $ws4 output DP-2
 
+workspace $ws7 output DVI-D-0
 workspace $ws8 output DVI-D-0
 workspace $ws9 output DVI-D-0
 workspace $ws10 output DVI-D-0
